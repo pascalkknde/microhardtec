@@ -1,4 +1,4 @@
-# microhardtec
+# Query
 SELECT AgeRange.ageGroup, Gender.gender, 
        COUNT(person.partyId), ROUND(100 * COUNT(person.partyId) / Total.countOfPeople) AS percentage
 FROM (SELECT '00 - 1' AS ageGroup, CURRENT_DATE AS lower, CURRENT_DATE - INTERVAL 1 YEAR AS upper
